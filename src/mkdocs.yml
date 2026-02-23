@@ -1,6 +1,6 @@
 site_name: Мой сайт-портфолио
 theme:
-  name: material  # или dracula, readthedocs и т.п.
+  name: material
 nav:
   - Home: index.md
   - About: about.md
