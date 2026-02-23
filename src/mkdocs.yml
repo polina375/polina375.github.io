@@ -1,7 +1,12 @@
-site_name: Сайт-портфолио
-
+site_name: Мой сайт-портфолио
+theme:
+  name: material  # или dracula, readthedocs и т.п.
 nav:
   - Home: index.md
   - About: about.md
+  - Labs:
+      - lab. 1: labs/lab1.md
+      - lab. 2: labs/lab2.md
+      - lab. 3: labs/lab3.md
 
 
