@@ -1,9 +1,9 @@
 # Welcome to MkDocs
 Привет,мир! Это главное страница 
 
-14.02.26 
-привет
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+14.02.26-дата создания
+
+
 
 ## Commands
 
