@@ -1,6 +1,6 @@
 site_name: Мой сайт-портфолио
 theme:
-  name: material
+  name: dracula
 nav:
   - Home: index.md
   - About: about.md
@@ -10,4 +10,3 @@ nav:
       - lab. 3: labs/lab3.md
       - lab. 4: labs/lab4.md
       - lab. 5: labs/lab5.md
-
