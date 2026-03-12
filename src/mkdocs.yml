@@ -1,6 +1,15 @@
 site_name: Мой сайт-портфолио
 theme:
-  name: dracula
+  name: material
+  language: ru   # язык интерфейса сайта
+  palette:
+      primary: indigo   # основной цвет сайта
+      accent: teal   # дополнительный цвет (кнопки, ссылки)
+
+  features:
+    - navigation.tabs   # делает меню сверху в виде вкладок
+    - navigation.top    # кнопка "вверх страницы"
+
 nav:
   - Home: index.md
   - About: about.md
