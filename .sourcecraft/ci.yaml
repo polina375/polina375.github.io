@@ -6,9 +6,9 @@ on:
 workflows:
   build-site:
     tasks:
-      - name: build-and-publish-site
+      - name: build-and-publish-src
         cubes:
-          - name: build-mkdocs-site
+          - name: build-mkdocs-src
             image: docker.io/library/python:3.14-slim
             script:
               - python -m pip install --upgrade pip
