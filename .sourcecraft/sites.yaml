@@ -1,3 +1,2 @@
 site:
-  root: site            # папка, куда MkDocs собирает сайт (обычно site/)
-  ref: release      # ветка, из которой будет публиковаться сайт
+  root: site
