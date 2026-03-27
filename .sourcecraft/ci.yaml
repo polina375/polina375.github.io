@@ -1,19 +1,18 @@
-
 on:
   push:
     branches: [ main, master ]
 
-workflows:
+workflows:  # Описание workflow (самого процесса)
   build-site:
     tasks:
       - name: build-mkdocs-site
-        cubes:
+        cubes:          # Один куб (контейнер), в котором будет происходить сборка
           - name: mkdocs-build
             image: python:3.12-slim
-            script:
-              - python -m pip install --upgrade pip
+            script:  # Команды
+              - python -m pip install --upgrade pip #  Обновляем pip до последней версии
               - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-              - pip install mkdocs mkdocs-material
-              - mkdocs build --strict -d ./site
-              - echo " MkDocs сайт успешно собран в папке ./site"
+              - pip install mkdocs mkdocs-material  #  Устанавливаем MkDocs и популярную тему Material
+              - mkdocs build --strict -d ./site #  Собираем статический сайт в папку ./site  --strict — останавливает сборку при ошибках (полезно для лабораторной)
+              - echo " MkDocs сайт успешно собран в папке ./site"    #  Выводим сообщение об успешной сборке (для удобства чтения логов)
               - ls -la ./site
