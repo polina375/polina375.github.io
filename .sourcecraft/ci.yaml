@@ -4,7 +4,7 @@ on:
       branches: main
 
 workflows:
-  build-site:
+  build-src:
     tasks:
       - name: build-and-publish-src
         cubes:
