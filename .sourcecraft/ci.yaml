@@ -1,18 +1,26 @@
 on:
   push:
-    branches: [ main, master ]
+    workflows: build-site
+    filter:
+      branches: main
 
-workflows:  # Описание workflow (самого процесса)
+workflows:
   build-site:
     tasks:
-      - name: build-mkdocs-site
-        cubes:          # Один куб (контейнер), в котором будет происходить сборка
-          - name: mkdocs-build
-            image: python:3.12-slim
-            script:  # Команды
-              - python -m pip install --upgrade pip #  Обновляем pip до последней версии
-              - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-              - pip install mkdocs mkdocs-material  #  Устанавливаем MkDocs и популярную тему Material
-              - mkdocs build --strict -d ./site #  Собираем статический сайт в папку ./site  --strict — останавливает сборку при ошибках (полезно для лабораторной)
-              - echo " MkDocs сайт успешно собран в папке ./site"    #  Выводим сообщение об успешной сборке (для удобства чтения логов)
+      - name: build-and-publish-site
+        cubes:
+          - name: build-mkdocs-site
+            image: docker.io/library/python:3.14-slim
+            script:
+              - python -m pip install --upgrade pip
+              - "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi"
+              - mkdocs build -d ./site
+              - echo "Сайт собран в папке ./site"
               - ls -la ./site
+
+          - name: publish-to-release-branch
+            script:
+              - git checkout -b release
+              - git add ./site
+              - "git commit -m \"feat: автоматическое обновление сайта\""
+              - "git push origin release -f"te
