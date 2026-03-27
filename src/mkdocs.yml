@@ -1,4 +1,5 @@
 site_name: Мой сайт-портфолио
+docs_dir: src
 theme:
   name: material
   language: ru   # язык интерфейса сайта
