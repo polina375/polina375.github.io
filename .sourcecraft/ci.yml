@@ -4,22 +4,22 @@ on:
       branches: main
 
 workflows:
-  build-src:
+  build-site:
     tasks:
-      - name: build-and-publish-src
+      - name: build-and-publish-site
         cubes:
-          - name: build-mkdocs-src
+          - name: build-mkdocs-site
             image: docker.io/library/python:3.14-slim
             script:
               - python -m pip install --upgrade pip
               - "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi"
-              - mkdocs build -d ./src
-              - echo "Сайт собран в папке ./src"
-              - ls -la ./src
+              - mkdocs build -d ./site
+              - echo "Сайт собран в папке ./site"
+              - ls -la ./site
 
           - name: publish-to-release-branch
             script:
               - git checkout release || git checkout -b release # воркфлоу переключиться на существующую локальную ветку release /создаст новую
-              - git add ./src
+              - git add ./site
               - "git commit -m \"feat: автоматическое обновление сайта\""
               - "git push origin release -f"
