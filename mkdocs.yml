@@ -1,7 +1,6 @@
 site_name: Мой сайт-портфолио
 
 theme:
-
   name: material
   language: ru   # язык интерфейса сайта
   palette:
