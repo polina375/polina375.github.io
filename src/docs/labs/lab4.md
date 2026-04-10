@@ -20,6 +20,8 @@ https://colab.research.google.com/drive/1phyFR3WYPzZw9fGkC5xB6WjYhPgfZ66c?usp=sh
 
 ## Вывод 
 
+
+
 В ходе выполнения лабораторной работы была решена задача прогнозирования дефолта по кредиту на данных «Give Me Some Credit».
 Лучшей моделью стал Random Forest после тюнинга, который показал:
 
