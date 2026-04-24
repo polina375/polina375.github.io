@@ -1,5 +1,5 @@
 # Лабораторная работа 3:  Реализация автоматического развёртывания статического сайта на MkDocs с использованием Sourcecraft и GitHub Actions
-https://sourcecraft.dev/polinaandreevna375/demo1403
+[ soursecraft] (https://sourcecraft.dev/polinaandreevna375/demo1403)
 
 ## Цель работы
 Реализовать два сценария автоматического развёртывания статического сайта, созданного на базе генератора MkDocs:
@@ -12,7 +12,7 @@ https://sourcecraft.dev/polinaandreevna375/demo1403
 Создан один локальный репозиторий с проектом MkDocs (mkdocs.yml находится в корне проекта, содержимое сайта — в папке src/docs).
 
 Добавлены два удалённых репозитория:
-origin — GitHub (https://github.com/polina375/polina375.github.io.git)
+origin — [GitHub] (https://github.com/polina375/polina375.github.io.git)
 
 sourcecraft — Sourcecraft
 

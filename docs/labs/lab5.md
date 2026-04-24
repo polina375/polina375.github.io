@@ -1,6 +1,6 @@
 # Лабораторная работа: Предсказание стоимости недвижимости
 
-https://colab.research.google.com/drive/1b5vghefc9yumqFC8drlM1rO7_dh43DOw?usp=sharing - ссылка на борд 
+[Ссылка на Colab](https://colab.research.google.com/drive/1b5vghefc9yumqFC8drlM1rO7_dh43DOw?usp=sharing)- ссылка на борд 
  
 # Цель работы
 
