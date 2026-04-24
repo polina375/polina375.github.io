@@ -1,6 +1,6 @@
 # Лабораторная работа 6: Очистка и трансформация данных с использованием pandas
 
-https://colab.research.google.com/drive/1XdlKNTR1GGm8S0lK7KHGdI8ywe7Niri-?usp=sharing
+[Ссылка на Colab](https://colab.research.google.com/drive/1XdlKNTR1GGm8S0lK7KHGdI8ywe7Niri-?usp=sharing)
 
 ## Цель работы
 
